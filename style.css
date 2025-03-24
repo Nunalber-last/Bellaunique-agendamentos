@@ -1,0 +1,131 @@
+/* Centraliza tudo na página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, serif;
+    background-color: #121111;
+    color: #f0e1bb;
+    margin-left: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.sobre_nos {
+    color: #f3f3f3;
+}
+
+/* Deixa a logo arredondada */
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;  /* Arredonda a imagem */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo da bio */
+.bio {
+    font-size: 18px;
+    color: #fafafa;
+    margin-bottom: 25px;
+}
+
+/* Links centralizados e um embaixo do outro */
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre os botões */
+}
+
+/* Estilo dos botões de link */
+.link-item {
+    background-color: #f8f2da;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;        /* Arredonda as bordas */
+    font-size: 18px;
+    transition: 0.30s;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.link-item:hover {
+    transform: scale(1.04); /* Efeito de zoom */
+    background-color: #ffffff;
+    color: #caae79;
+}
+
+.link-email{
+    background-color: #1a1919;
+    color: #e6d5af;
+    text-decoration: none;
+    padding: 2px 2px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;        /* Arredonda as bordas */
+    font-size: 18px;
+    transition: 0.30s;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+
+}
+
+.link-email:hover {
+    transform: scale(1.04); /* Efeito de zoom */
+    background-color: #000000;
+    color: #caae79;
+}
+
+/* Informações adicionais */
+.info-adicional {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.info-adicional h2,
+.info-adicional h3 {
+    color: #fffdfd;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+
+.tamanho_wpplogo{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30%;  /* Arredonda a imagem */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.3);
+}
+
+.unhas-e-cilios {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espaçamento entre as seções */
+}
+
+.unhas, .cilios {
+    width: 45%; /* Ajuste a largura conforme necessário */
+}
+
+.link-item {
+    display: block;
+    margin-bottom: 10px;
+}
