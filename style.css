@@ -117,15 +117,162 @@ footer {
 
 .unhas-e-cilios {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* Espaçamento entre as seções */
-}
+    flex-wrap: wrap;  /* Permite que os itens se movam para a linha seguinte, se necessário */
+    justify-content: space-between;  /* Garante o espaçamento adequado entre as seções */}   
 
 .unhas, .cilios {
-    width: 45%; /* Ajuste a largura conforme necessário */
-}
+    width: 45%;  /* Tamanho padrão para telas maiores */
+    margin-bottom: 20px;  /* Espaçamento inferior entre as seções */}
 
 .link-item {
     display: block;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .unhas, .cilios {
+        width: 100%;  /* Em telas pequenas, as seções ocupam 100% da largura */
+        margin-bottom: 15px;  /* Ajusta o espaço entre os elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bio {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .link-item {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .link-email {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .unhas-e-cilios {
+        flex-direction: column;
+    }
+
+    .unhas, .cilios {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info-adicional {
+        font-size: 14px;
+    }
+}
+
+/* Ajuste para celulares grandes (até 768px) */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .link-item {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .link-email {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .unhas-e-cilios {
+        flex-direction: column;
+    }
+
+    .unhas, .cilios {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info-adicional {
+        font-size: 15px;
+    }
+}
+
+/* Ajuste para tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .bio {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .link-item {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .link-email {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .unhas-e-cilios {
+        flex-direction: row;
+    }
+
+    .unhas, .cilios {
+        width: 45%;
+    }
+
+    .info-adicional {
+        font-size: 16px;
+    }
+}
+
+/* Ajuste para computadores grandes (acima de 1024px) */
+@media (min-width: 1025px) {
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bio {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .link-item {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .link-email {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .unhas-e-cilios {
+        flex-direction: row;
+    }
+
+    .unhas, .cilios {
+        width: 45%;
+    }
+
+    .info-adicional {
+        font-size: 16px;
+    }
 }
