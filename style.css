@@ -45,6 +45,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px; /* Espaço entre os botões */
+    width: 100%;
 }
 
 /* Estilo dos botões de link */
@@ -56,6 +57,19 @@ body {
     width: 90%;
     max-width: 400px;
     border-radius: 12px;        /* Arredonda as bordas */
+    font-size: 18px;
+    transition: 0.30s;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.link-item-cilios-unhas {
+    background-color: #f8f2da;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;        /* Arredonda as bordas */
     font-size: 18px;
     transition: 0.30s;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
@@ -106,173 +120,42 @@ footer {
     color: #777;
 }
 
-.tamanho_wpplogo{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 30%;  /* Arredonda a imagem */
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.3);
-}
-
 .unhas-e-cilios {
     display: flex;
-    flex-wrap: wrap;  /* Permite que os itens se movam para a linha seguinte, se necessário */
-    justify-content: space-between;  /* Garante o espaçamento adequado entre as seções */}   
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 .unhas, .cilios {
-    width: 45%;  /* Tamanho padrão para telas maiores */
-    margin-bottom: 20px;  /* Espaçamento inferior entre as seções */}
+    flex: 1 1 48%;  /* Ocupa 48% cada, deixa 4% pro gap */
+    background-color: #1a1919;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+.tamanho_wpplogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
 .link-item {
     display: block;
     margin-bottom: 10px;
 }
 
+/* RESPONSIVIDADE GERAL */
 @media (max-width: 768px) {
     .unhas, .cilios {
-        width: 100%;  /* Em telas pequenas, as seções ocupam 100% da largura */
-        margin-bottom: 15px;  /* Ajusta o espaço entre os elementos */
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 100px;
-        height: 100px;
+        flex: 1 1 100%;
     }
 
-    .bio {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-
-    .link-item {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .link-email {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .unhas-e-cilios {
-        flex-direction: column;
-    }
-
-    .unhas, .cilios {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .info-adicional {
-        font-size: 14px;
-    }
-}
-
-/* Ajuste para celulares grandes (até 768px) */
-@media (max-width: 768px) {
     .logo {
         width: 120px;
         height: 120px;
-    }
-
-    .bio {
-        font-size: 17px;
-        margin-bottom: 20px;
-    }
-
-    .link-item {
-        width: 100%;
-        font-size: 17px;
-    }
-
-    .link-email {
-        width: 100%;
-        font-size: 17px;
-    }
-
-    .unhas-e-cilios {
-        flex-direction: column;
-    }
-
-    .unhas, .cilios {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .info-adicional {
-        font-size: 15px;
-    }
-}
-
-/* Ajuste para tablets (até 1024px) */
-@media (max-width: 1024px) {
-    .logo {
-        width: 130px;
-        height: 130px;
-    }
-
-    .bio {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
-    .link-item {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .link-email {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .unhas-e-cilios {
-        flex-direction: row;
-    }
-
-    .unhas, .cilios {
-        width: 45%;
-    }
-
-    .info-adicional {
-        font-size: 16px;
-    }
-}
-
-/* Ajuste para computadores grandes (acima de 1024px) */
-@media (min-width: 1025px) {
-    .logo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .bio {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-    .link-item {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .link-email {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .unhas-e-cilios {
-        flex-direction: row;
-    }
-
-    .unhas, .cilios {
-        width: 45%;
-    }
-
-    .info-adicional {
-        font-size: 16px;
     }
 }
