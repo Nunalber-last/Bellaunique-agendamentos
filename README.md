@@ -12,9 +12,7 @@ Este projeto oferece uma interface simples e intuitiva para agendamentos online,
 - **Interface rEsponsiva**: compatível com dispositivos móveis e desktops.
 - **Design intuitivo**: navegação simples e direta para facilitar o uso.
 
-## 🛠️ Tecnologias Utilizadas
-
-- **Frontend**:
+## Tecnologias Utilizadas
   - HTML5
   - CSS3
   - JavaScript
