@@ -1,4 +1,4 @@
-# Bellaunique Agendamentos
+# Bella Unique Agendamentos
 
 > Interface de agendamentos para o Bella Unique | Studio, permitindo que clientes entrem em contato diretamente com as profissionais do salão.
 
@@ -8,9 +8,9 @@ Este projeto oferece uma interface simples e intuitiva para agendamentos online,
 
 ## Funcionalidades
 
-- **Agendamento Online**: Clientes podem agendar horários diretamente com as profissionais.
-- **Interface Responsiva**: Compatível com dispositivos móveis e desktops.
-- **Design Intuitivo**: Navegação simples e direta para facilitar o uso.
+- **Agendamento online**: clientes podem agendar horários diretamente com as profissionais.
+- **Interface rEsponsiva**: compatível com dispositivos móveis e desktops.
+- **Design intuitivo**: navegação simples e direta para facilitar o uso.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -18,6 +18,3 @@ Este projeto oferece uma interface simples e intuitiva para agendamentos online,
   - HTML5
   - CSS3
   - JavaScript
-
-## 📁 Estrutura de Diretórios
-
